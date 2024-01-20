@@ -1,0 +1,5 @@
+site_name: EEArchive
+
+# from mkdocs-material installation documentation
+theme:
+  name: material
