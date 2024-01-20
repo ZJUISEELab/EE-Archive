@@ -3,3 +3,64 @@ site_name: EEArchive
 # from mkdocs-material installation documentation
 theme:
   name: material
+  language: zh
+
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+      primary: white
+      accent: teal
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+      primary: black
+      accent: teal
+
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.path
+    - navigation.top
+    - navigation.footer
+
+    - header.autohide
+
+    - search.suggest
+    - search.highlight
+
+    - content.action.edit
+
+extra:
+  social:
+    - icon: simple/github
+      link: https://github.com/cyc-987
+      name: Author's GitHub
+
+plugins:
+  - search
+  - tags
+
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: iso_datetime
+      fallback_to_build_date: true
+  - git-committers:
+      repository: cyc-987/EE-Archive
+      branch: main
+      enabled: true
+
+repo_url: https://github.com/cyc-987/EE-Archive/tree/main
+repo_name: cyc-987/EE-Archive
+edit_uri: edit/main/docs/
+
+copyright: Copyright &copy; 2024 cyc-987
