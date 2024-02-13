@@ -1,4 +1,13 @@
 site_name: EEArchive
+repo_url: https://github.com/ZJUISEELab/EE-Archive/tree/main
+repo_name: ZJUISEELab/EE-Archive
+edit_uri: edit/main/docs/
+copyright: Copyright &copy; 2024 cyc-987
+
+nav:
+  - 主页: 
+    - 主页: index.md
+    - 贡献模版: template.md
 
 # from mkdocs-material installation documentation
 theme:
@@ -52,15 +61,36 @@ plugins:
 
   - git-revision-date-localized:
       enable_creation_date: true
-      type: iso_datetime
+      type: datetime
       fallback_to_build_date: true
   - git-committers:
       repository: cyc-987/EE-Archive
       branch: main
       enabled: true
 
-repo_url: https://github.com/cyc-987/EE-Archive/tree/main
-repo_name: cyc-987/EE-Archive
-edit_uri: edit/main/docs/
-
-copyright: Copyright &copy; 2024 cyc-987
+markdown_extensions:
+  - toc:
+      permalink: true
+      toc_depth: 4
+  - def_list
+  - attr_list
+  - md_in_html
+  - sane_lists
+  - admonition
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.snippets
+  - pymdownx.magiclink
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.arithmatex:
+      generic: true
