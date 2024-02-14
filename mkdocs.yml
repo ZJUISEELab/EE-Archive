@@ -6,7 +6,7 @@ copyright: Copyright &copy; 2024 cyc-987
 
 nav:
   - 主页: 
-    - 主页: index.md
+    - index.md
     - 贡献模版: template.md
 
 # from mkdocs-material installation documentation
@@ -61,10 +61,10 @@ plugins:
 
   - git-revision-date-localized:
       enable_creation_date: true
-      type: datetime
+      type: date
       fallback_to_build_date: true
   - git-committers:
-      repository: cyc-987/EE-Archive
+      repository: ZJUISEELab/EE-Archive
       branch: main
       enabled: true
 
