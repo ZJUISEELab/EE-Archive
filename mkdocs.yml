@@ -67,6 +67,7 @@ plugins:
       repository: ZJUISEELab/EE-Archive
       branch: main
       enabled: true
+  - git-authors
 
 markdown_extensions:
   - toc:
