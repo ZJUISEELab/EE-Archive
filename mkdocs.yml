@@ -64,7 +64,8 @@ plugins:
 
   - git-revision-date-localized:
       enable_creation_date: true
-      type: date
+      type: iso_datetime
+      timezone: Asia/Shanghai
       fallback_to_build_date: true
   - git-committers:
       repository: ZJUISEELab/EE-Archive
