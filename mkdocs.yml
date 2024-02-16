@@ -2,7 +2,7 @@ site_name: EEArchive
 repo_url: https://github.com/ZJUISEELab/EE-Archive/tree/main
 repo_name: ZJUISEELab/EE-Archive
 edit_uri: edit/main/docs/
-copyright: Copyright &copy; 2024 cyc-987
+copyright: Copyright &copy; 2024 ZJUISEELab
 
 nav:
   - 主页: 
@@ -10,19 +10,21 @@ nav:
     - 贡献模版: template.md
 
 # from mkdocs-material installation documentation
+extra_css:
+  - stylesheets/extra.css
 theme:
   name: material
   language: zh
 
-  palette:
+  palette:    
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
-      scheme: default
+      scheme: mydefault
       toggle:
         icon: material/brightness-7 
         name: Switch to dark mode
-      primary: white
-      accent: teal
+      #primary: blue
+      accent: cyan
 
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
@@ -30,8 +32,8 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
-      primary: black
-      accent: teal
+      #primary: black
+      accent: blue
 
   features:
     - navigation.instant
@@ -41,13 +43,14 @@ theme:
     - navigation.path
     - navigation.top
     - navigation.footer
-
     - header.autohide
-
     - search.suggest
     - search.highlight
-
     - content.action.edit
+  
+  font:
+    #text: noto-chinese
+    code: Roboto Mono
 
 extra:
   social:
@@ -67,7 +70,7 @@ plugins:
       repository: ZJUISEELab/EE-Archive
       branch: main
       enabled: true
-  - git-authors
+  #- git-authors
 
 markdown_extensions:
   - toc:
