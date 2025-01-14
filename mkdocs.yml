@@ -2,12 +2,36 @@ site_name: EEArchive
 repo_url: https://github.com/ZJUISEELab/EE-Archive/tree/main
 repo_name: ZJUISEELab/EE-Archive
 edit_uri: edit/main/docs/
-copyright: Copyright &copy; 2024 ZJUISEELab
+copyright: Copyright &copy; 2025 ZJUISEELab
 
+###################### Navigation  ######################
 nav:
   - 主页: 
     - index.md
     - 贡献模版: template.md
+  - 思政: 思政/index.md
+  - 乱七八糟:
+    - 其他/index.md
+    - 通识: 其他/通识.md
+    - 创新创业: 其他/创新创业.md
+    - 外语: 其他/外语.md
+    - 体育: 其他/体育.md
+  - 自然科学通识:
+    - 自然科学通识/index.md
+  - 专业基础课程:
+    - 专业基础课程/index.md
+  - 专业必修课程:
+    - 专业必修课程/index.md
+  - 专业模块课程（课程组1）:
+    - 专业模块课程1/index.md
+  - 专业模块课程（课程组2）:
+    - 专业模块课程2/index.md
+  - 实践教学环节:
+    - 实践教学环节/index.md
+
+
+
+###################### End  ######################
 
 # from mkdocs-material installation documentation
 extra_css:
