@@ -97,6 +97,7 @@ plugins:
       repository: ZJUISEELab/EE-Archive
       branch: main
       enabled: !ENV [CI, false]
+      # enabled: true
   #- git-authors
 
 markdown_extensions:
