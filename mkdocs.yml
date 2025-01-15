@@ -28,6 +28,8 @@ nav:
     - 专业模块课程2/index.md
   - 实践教学环节:
     - 实践教学环节/index.md
+  - 香农班:
+    - 香农班/index.md
 
 
 
@@ -94,7 +96,7 @@ plugins:
   - git-committers:
       repository: ZJUISEELab/EE-Archive
       branch: main
-      enabled: true
+      enabled: !ENV [CI, false]
   #- git-authors
 
 markdown_extensions:
