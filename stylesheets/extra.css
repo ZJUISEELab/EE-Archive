@@ -43,3 +43,9 @@
   --md-footer-fg-color--lighter: #FFFFFF;
   --md-code-bg-color: #1d1d1d;
 }
+
+.md-typeset a.md-author img {
+  border-radius: 100%;
+  filter: grayscale(0%) opacity(100%);
+  transition: filter 125ms;
+}
